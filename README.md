@@ -1,1 +1,2 @@
-# SSW345-Node.jsLab
+# SSW345 Node.js Lab Results
+Summary: This lab was a very in-depth way for me to visualize how the Node.js environment connects to HTML, SQL, and an API. It was pretty easy to follow. One difficulty I had was with updating the server because I kept getting "Already in use" errors. I had to kill some running operations before I could move on and update the server. Overall, it is a lab I will be referring to in order to better understand Node.js.
