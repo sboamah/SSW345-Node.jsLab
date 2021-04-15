@@ -43,9 +43,8 @@ const router = (app) => {
     });
     // Add a new developer
     app.post('/handles', (request, response) => {
-        pool.query('INSERT INTO Handle SET ?', request.body, (error, result) => {
+        pool.query('INSERT INTO Handle SET ?', request.body, (error) => {
             if (error) throw error;
-            console.log(result);
             response.status(201).send(`Developer added`);
         });
     });
