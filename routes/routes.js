@@ -44,6 +44,8 @@ const router = (app) => {
     // Add a new developer
     app.post('/handles', (request, response) => {
         pool.query('INSERT INTO Handle SET ?', request.body, (error) => {
+            // got rid of result since it was an unused variable
+            // Eleni Rotsides
             if (error) throw error;
             response.status(201).send(`Developer added`);
         });
